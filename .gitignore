@@ -5,6 +5,7 @@ tmptodel/
 script/
 saved_models/
 .vscode/
+sample_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
