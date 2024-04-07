@@ -6,6 +6,7 @@ script/
 saved_models/
 .vscode/
 sample_data/
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
