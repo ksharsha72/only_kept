@@ -110,7 +110,7 @@ def load_code_descriptions(version='mimic3'):
                 desc = row[-1]
                 if code not in desc_dict.keys():
                     desc_dict[reformat(code, False)] = desc
-        with open('%s/ICD9_descriptions' % DATA_DIR, 'r') as labelfile:
+        with open('%s/ICD9_descriptions.txt' % DATA_DIR, 'r') as labelfile:
             for _, row in enumerate(labelfile):
                 row = row.rstrip().split()
                 code = row[0]
