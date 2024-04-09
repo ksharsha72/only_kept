@@ -225,7 +225,7 @@ class MimicFullDataset(Dataset):
         descriptions = " " + " <mask>, ".join(desc_list) + " <mask>. "
         tmp = self.tokenizer.tokenize(descriptions)
         self.global_window = len(tmp) + 1
-        assert self.global_window < 501 # only for gpu memory efficiency
+        # assert self.global_window < 501 # only for gpu memory efficiency
 
         self.label_yes = self.tokenizer("yes")['input_ids'][1] # 10932
         self.label_no  = self.tokenizer("no")['input_ids'][1]  # 2362
